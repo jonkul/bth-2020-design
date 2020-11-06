@@ -1,6 +1,6 @@
 ---
-Title: Home
-Description: This is my index page.
+Title: Om mig
+Description: This is my about page.
 ---
 
 Om mig
