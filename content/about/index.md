@@ -1,17 +1,13 @@
 ---
-Title: Om mig
+Title: Om sidan
 Description: This is my about page.
 ---
 
-Om mig
+Om sidan
 ==========================
 
-![Bild på Jon](assets/img/jon.jpg "Bild på Jon") {.image}
+Den här hemsidan är uppbyggd med hjälp av Markdown, Git & Github, CSS, Pico, SASS, Node.js, NPM, Normalize.css, Font Awesome, samt Google Fonts.
 
-Hej!
+Kortfattat är sidan baserat på ett tekniskt ramverk i form av Pico, som använder Markdown-filer för att fylla sidan med text- och bildinnehåll, och hela paketet är styleat med hjälp av SASS, som i sin tur importerar ett antal verktyg för standardisering, typsnitt samt ikoner.
 
-Jon Kullberg heter jag, född och uppvuxen i gränslandet mellan Skåne, Blekinge och Småland, men har bott i Stockholm de senaste 10 åren eller så. Jag har mest jobbat med webb och IT på olika sätt sedan jag slutade skolan, men tar nu upp studierna igen i hopp om att på sikt bli lite mer geografiskt obunden.
-
-Jag har inte ägnat mig speciellt mycket åt ren programmering tidigare tyvärr, men har gjort en hel del angränsande saker som lite enkel scripting, en del lite mer avancerade saker i Excel, osv.
-
-Fritiden ägnar jag numera mest åt att läsa.
+Sass konverteras till CSS med hjälp av ett NPM-kommando, som för övrigt är verktyget vi använder för att ladda hem och installera verktyg, och slutligen laddas hela klabbet upp till verionshanteraren Git.
