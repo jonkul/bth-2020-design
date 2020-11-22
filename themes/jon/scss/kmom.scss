@@ -1,0 +1,126 @@
+/* Variables */
+$font-stack: 'Open Sans',
+sans-serif;
+$red: #ff6b6c;
+$yellow: #ffc145;
+$white: #fffffb;
+$dark: #5b5f97;
+$light: #b8b8d1;
+$shadow-color1: rgba(0, 0, 0, 0.2);
+$shadow-color2: rgba(0, 0, 0, 0.19);
+$box-shadow: 0 4px 8px 0 $shadow-color1,
+0 6px 20px 0 $shadow-color2;
+$text-shadow-dark: 1px 1px $dark;
+$text-shadow-light: 1px 1px $light;
+
+* {
+    font-family: $font-stack;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.kmomnav {
+    list-style: none;
+    margin: 0;
+    margin-top: 60px;
+    line-height: 2em;
+    border-right: dotted 1px $dark;
+    display: flex;
+    flex-direction: column;
+
+    li a {
+        color: $dark;
+    }
+
+    li:hover a {
+        color: $white;
+    }
+
+    .active a {
+        color: $yellow;
+        text-shadow: $text-shadow-dark;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 10px 20px;
+    }
+}
+
+.kmomindex {
+    max-width: 980px;
+    width: 100%;
+
+    h1 {
+        margin-left: 1.5em;
+    }
+}
+
+.kmomleftie {
+    width: 1%;
+    min-width: 150px;
+    background-color: $light;
+    text-align: left;
+}
+
+@media (pointer:none),
+    (pointer:coarse) {
+    .kmomleftie,
+    .aside,
+    .kmomnav {
+        display: none;
+        width: 0%;
+    }
+
+    .kmomindex {
+        margin: 10px;
+        padding: 1px;
+
+        h1,
+        ol,
+        li,
+        p {
+            margin-left: 0.5em;
+            padding-inline-start: 0;
+            padding-inline-end: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .kmomleftie,
+    .aside,
+    .kmomnav {
+        display: none;
+        width: 0%;
+    }
+
+    .kmomindex {
+        margin: 10px;
+        padding: 1px;
+
+        h1,
+        ol,
+        li,
+        p {
+            margin-left: 0.5em;
+            padding-inline-start: 0;
+            padding-inline-end: 0;
+        }
+    }
+}

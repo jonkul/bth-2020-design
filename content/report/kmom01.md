@@ -1,6 +1,8 @@
 ---
 Title: Kmom01
 Description: Part 1
+Template: kmom
+kmom: 1
 ---
 
 Kursmoment 1

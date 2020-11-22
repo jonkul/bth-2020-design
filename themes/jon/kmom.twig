@@ -68,12 +68,19 @@
     </header>
         
     <div class="main" id="main" role="main">
-        <div class="leftie">
+        <div class="kmomleftie">
+            <div class="aside">
+                <ul class="kmomnav">
+                    {% for i in 1..6%}
+                        <li {% if current_page.meta.kmom == i %} class="active" {% endif %}><a href="kmom0{{ i }}">Kmom0{{ i }}</a></li>
+                    {% endfor %}
+                    <li {% if current_page.meta.kmom == 10 %} class="active" {% endif %}><a href="kmom10">Kmom10</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="index">
+        <div class="kmomindex">
             {{ content }}
-        </div>
-        <div class="rightie">
         </div>
     </div>
 
