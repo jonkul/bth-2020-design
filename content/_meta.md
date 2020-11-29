@@ -1,6 +1,7 @@
 ---
 Logo: image/logo.png
 Tagline: BTH-student, 2020-2022
+icon: fas fa-snowflake
 Social:
     - title: Länk till sidans Github-repo.
       url: https://github.com/jonkul/bth-2020-design
@@ -11,6 +12,12 @@ Social:
     - title: Länk till Font Awesome.
       url: https://fontawesome.com/
       icon: fab fa-font-awesome
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
 Aside:
     - title: Länk till Kmom01
       a: Kmom01

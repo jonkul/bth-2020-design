@@ -12,11 +12,12 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 /* Variables */
 $font-stack: 'Open Sans',
 sans-serif;
-$red: #ff6b6c;
-$yellow: #ffc145;
-$white: #fffffb;
-$dark: #5b5f97;
-$light: #b8b8d1;
+$red:      #ff6b6c;
+$yellow:   #ffc145;
+$white:    #fffffb;
+$old-dark: #5b5f97;
+$dark:     #40436b;
+$light:    #b8b8d1;
 $shadow-color1: rgba(0, 0, 0, 0.2);
 $shadow-color2: rgba(0, 0, 0, 0.19);
 $box-shadow: 0 4px 8px 0 $shadow-color1,
@@ -44,20 +45,24 @@ body {
 
 .footer {
     flex: 0 0 auto;
+    border-top: $yellow solid 10px;
 }
 
 /* Header */
 
 .site-header {
-    background-color: $red;
-    color: $yellow;
+    background-color: $dark;
+    color: $light;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    border-bottom: $red 10px solid;
+    
 }
 
 .site-header a,
 .site-header a:visited {
-    color: $yellow;
-    text-shadow: 1px 1px $dark;
     text-decoration: none;
+    color: $light;
 }
 
 /* Main */
@@ -76,7 +81,7 @@ body {
 
 .leftie,
 .rightie {
-    width: 10%;
+    width: 30%;
     background-color: $light;
 }
 
@@ -95,13 +100,13 @@ body {
     padding: 0 3em;
 
     a {
-        color: $white;
+        color: $light;
         text-shadow: $text-shadow-light;
         text-decoration: none;
     }
 
     a:hover {
-        color: $red;
+        color: $yellow;
     }
 
     p {
@@ -120,6 +125,8 @@ body {
 
 p {
     margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.6em;
 }
 
 ul,
@@ -136,16 +143,42 @@ li {
 }
 
 h1 {
-    color: $white;
-    text-shadow: $text-shadow-dark;
+    color: $light;
+}
+
+.landingpage h1,
+.kmomindex h1,
+.index h1 {
+    color: $dark;
+}
+
+h2 {
+    color: $dark;
+    margin-top: 2em;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+i {
+    font-size: 0.6em;
+    margin-top: 0;
+    line-height: 1em;
+    vertical-align: middle;
 }
 
 /* Bild */
 
 .image {
     float: right;
-    margin: 20px;
+    margin: 20px 0;
+    box-shadow: $box-shadow;
+    border-radius: 2px;
+}
 
+.image2 {
+    margin: 20px 0;
     box-shadow: $box-shadow;
     border-radius: 2px;
 }
@@ -158,6 +191,11 @@ img {
 
 .flash-img {
     width: 100%;
+}
+
+td {
+    box-shadow: $box-shadow;
+    border-radius: 2px;
 }
 
 /* NAV */
@@ -234,7 +272,7 @@ img {
         display: inline-block;
         margin-left: 0.5em;
         padding: 0;
-        font-weight: bold;
+        font-weight: 700;
         text-align: right;
     }
 
@@ -244,7 +282,7 @@ img {
 
     a:hover,
     .nav-toggle:hover {
-        color: $white;
+        color: $yellow;
     }
 }
 

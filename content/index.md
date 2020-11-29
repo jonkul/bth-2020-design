@@ -3,8 +3,7 @@ Title: Home
 Description: This is my index page.
 ---
 
-Om mig
-==========================
+##Om mig##
 
 ![Bild på Jon](assets/img/jon.jpg "Bild på Jon") {.image}
 

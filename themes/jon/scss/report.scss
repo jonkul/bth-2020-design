@@ -17,6 +17,7 @@ $text-shadow-light: 1px 1px $light;
     display: grid;
     gap: 2em 2em;
     padding: 1em;
+    justify-items: stretch;
 
     h1 {
         grid-column: span 3;
@@ -30,6 +31,7 @@ $text-shadow-light: 1px 1px $light;
     height: 150px;
     display: flex;
     flex-direction: column;
+    grid-column: span 1;
 
     h2 {
         color: $white;
@@ -42,8 +44,10 @@ $text-shadow-light: 1px 1px $light;
     }
 
     i {
-        margin-top: 0.6em;
-        font-size: 1.5em;
+        font-size: 0.8em;
+        margin-top: 1.8em;
+        line-height: 1em;
+        vertical-align: middle;
         color: $red;
     }
 
