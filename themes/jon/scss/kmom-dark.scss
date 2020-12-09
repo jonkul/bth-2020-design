@@ -1,0 +1,138 @@
+/* Variables */
+$font-stack: 'Open Sans',
+sans-serif;
+$red: #b50000;
+$yellow: #d28c00;
+$white: #bfbfd3;
+$dark: #25273e;
+$light: #9696bb;
+$shadow-color1: rgba(0, 0, 0, 0.2);
+$shadow-color2: rgba(0, 0, 0, 0.19);
+$box-shadow: 0 4px 8px 0 $shadow-color1,
+0 6px 20px 0 $shadow-color2;
+$text-shadow-dark: 1px 1px $dark;
+$text-shadow-light: 1px 1px $light;
+
+* {
+    font-family: $font-stack;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.kmomnav {
+    list-style: none;
+    margin: 0;
+    margin-top: 60px;
+    line-height: 2em;
+    border-right: dashed 1px $light;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+
+    li a {
+        color: $light;
+    }
+
+    li:hover a {
+        color: $yellow;
+        text-shadow: $text-shadow-dark;
+    }
+
+    .active a {
+        color: $white;
+        text-shadow: $text-shadow-dark;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 10px 20px;
+    }
+
+    i {
+        color: $red;
+        text-shadow: $text-shadow-dark;
+        margin-left: 10px;
+    }
+
+    :hover i {
+        color: $yellow;
+    }
+}
+
+.kmomindex {
+    max-width: 980px;
+    width: 100%;
+
+    h1 {
+        margin-left: 1.5em;
+    }
+}
+
+.kmomleftie {
+    width: 10%;
+    min-width: 150px;
+    background-color: $dark;
+    text-align: left;
+}
+
+@media (pointer:none),
+    (pointer:coarse) {
+    .kmomleftie,
+    .aside,
+    .kmomnav {
+        display: none;
+        width: 0%;
+    }
+
+    .kmomindex {
+        margin: 10px;
+        padding: 1px;
+
+        h1,
+        ol,
+        li,
+        p {
+            margin-left: 0.5em;
+            padding-inline-start: 0;
+            padding-inline-end: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .kmomleftie,
+    .aside,
+    .kmomnav {
+        display: none;
+        width: 0%;
+    }
+
+    .kmomindex {
+        margin: 10px;
+        padding: 1px;
+
+        h1,
+        ol,
+        li,
+        p {
+            margin-left: 0.5em;
+            padding-inline-start: 0;
+            padding-inline-end: 0;
+        }
+    }
+}

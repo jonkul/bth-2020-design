@@ -1,5 +1,5 @@
 ---
-Logo: image/logo.png
+Logo: assets/img/logo.svg
 Tagline: BTH-student, 2020-2022
 icon: fas fa-snowflake
 Social:
