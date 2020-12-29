@@ -32,7 +32,7 @@ Redovisningssida för design
 </div>
 
 <div class="kmom-box">
-  <a href="analysis/03_design_principles">
+  <a href="analysis/03_designprincip">
     <div class="headline">
       <h2>Design principles</h2>
       <i class="fas fa-arrow-right"></i>

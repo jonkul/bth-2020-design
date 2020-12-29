@@ -1,5 +1,6 @@
 ---
 Title: Home
+lang: se
 Description: This is my index page.
 ---
 

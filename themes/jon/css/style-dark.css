@@ -6459,10 +6459,23 @@ readers do not read off random characters that represent icons */
 }
 
 /* Variables */
+.mainrep,
+.main {
+  background-color: #25273e;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
 .landingpage {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2em 2em;
-  padding: 1em;
+  justify-items: center;
 }
 .landingpage h1 {
   grid-column: span 3;
@@ -6472,12 +6485,16 @@ readers do not read off random characters that represent icons */
 .kmom-box {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 2px;
-  height: 150px;
+  min-height: 120px;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
+  grid-column: span 1;
+  border: 1px solid #9696bb;
+  filter: brightness(80%);
 }
 .kmom-box h2 {
-  color: #fffffb;
+  color: #25273e;
 }
 .kmom-box h2,
 .kmom-box p {
@@ -6485,19 +6502,21 @@ readers do not read off random characters that represent icons */
   margin-block-end: 0;
 }
 .kmom-box i {
-  margin-top: 0.6em;
-  font-size: 1.5em;
-  color: #ff6b6c;
+  font-size: 0.8em;
+  margin-top: 1.8em;
+  line-height: 1em;
+  vertical-align: middle;
+  color: #b50000;
 }
 .kmom-box i:hover {
-  color: #ffc145;
+  color: #d28c00;
 }
 .kmom-box a {
   text-decoration: none;
 }
 
 .kmom-box:hover i {
-  color: #ffc145;
+  color: #d28c00;
 }
 
 .kmom-box.project {
@@ -6505,7 +6524,7 @@ readers do not read off random characters that represent icons */
 }
 
 .headline {
-  background-color: #5b5f97;
+  background-color: #9696bb;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -6517,10 +6536,9 @@ readers do not read off random characters that represent icons */
 }
 
 .description {
-  background-color: #b8b8d1;
   height: 10px;
   border-radius: 0 0 2px 2px;
-  color: #5b5f97;
+  color: #bfbfd3;
 }
 
 @media (pointer: none), (pointer: coarse) {
@@ -6562,6 +6580,25 @@ body {
   height: 100%;
 }
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-left: 2em;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .aside {
   display: flex;
   flex-direction: row;
@@ -6573,25 +6610,35 @@ body {
   margin: 0;
   margin-top: 60px;
   line-height: 2em;
-  border-right: dotted 1px #5b5f97;
+  border-right: dashed 1px #9696bb;
   display: flex;
   flex-direction: column;
+  min-width: 200px;
 }
 .kmomnav li a {
-  color: #5b5f97;
+  color: #9696bb;
 }
 .kmomnav li:hover a {
-  color: #fffffb;
+  color: #d28c00;
+  text-shadow: 1px 1px #25273e;
 }
 .kmomnav .active a {
-  color: #ffc145;
-  text-shadow: 1px 1px #5b5f97;
+  color: #bfbfd3;
+  text-shadow: 1px 1px #25273e;
 }
 .kmomnav a {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 700;
   margin: 10px 20px;
+}
+.kmomnav i {
+  color: #b50000;
+  text-shadow: 1px 1px #25273e;
+  margin-left: 10px;
+}
+.kmomnav :hover i {
+  color: #d28c00;
 }
 
 .kmomindex {
@@ -6603,9 +6650,9 @@ body {
 }
 
 .kmomleftie {
-  width: 1%;
+  width: 10%;
   min-width: 150px;
-  background-color: #b8b8d1;
+  background-color: #25273e;
   text-align: left;
 }
 
@@ -6672,19 +6719,22 @@ body {
 
 .footer {
   flex: 0 0 auto;
+  border-top: #d28c00 solid 2px;
 }
 
 /* Header */
 .site-header {
-  background-color: #ff6b6c;
-  color: #ffc145;
+  background-color: #25273e;
+  color: #9696bb;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  border-bottom: #b50000 2px solid;
 }
 
 .site-header a,
 .site-header a:visited {
-  color: #ffc145;
-  text-shadow: 1px 1px #5b5f97;
   text-decoration: none;
+  color: #9696bb;
 }
 
 /* Main */
@@ -6692,8 +6742,8 @@ body {
 .mainrep {
   flex: 1 0 auto;
   padding: 2em;
-  background-color: #b8b8d1;
-  color: #5b5f97;
+  background-color: #25273e;
+  color: #9696bb;
 }
 
 .main {
@@ -6702,8 +6752,7 @@ body {
 
 .leftie,
 .rightie {
-  width: 10%;
-  background-color: #b8b8d1;
+  width: 30%;
 }
 
 .index {
@@ -6713,17 +6762,17 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #5b5f97;
-  color: #b8b8d1;
+  background-color: #25273e;
+  color: #9696bb;
   padding: 0 3em;
 }
 .footer a {
-  color: #fffffb;
-  text-shadow: 1px 1px #b8b8d1;
+  color: #9696bb;
+  text-shadow: 1px 1px #9696bb;
   text-decoration: none;
 }
 .footer a:hover {
-  color: #ff6b6c;
+  color: #d28c00;
 }
 .footer p {
   margin: 0;
@@ -6738,6 +6787,8 @@ body {
 /* Text */
 p {
   margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.6em;
 }
 
 ul,
@@ -6754,14 +6805,48 @@ li {
 }
 
 h1 {
-  color: #fffffb;
-  text-shadow: 1px 1px #5b5f97;
+  color: #9696bb;
+}
+
+.landingpage h1,
+.kmomindex h1,
+.index h1 {
+  color: #9696bb;
+}
+
+h2 {
+  color: #9696bb;
+  margin-top: 2em;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+i {
+  font-size: 0.6em;
+  margin-top: 0;
+  line-height: 1em;
+  vertical-align: middle;
 }
 
 /* Bild */
 .image {
   float: right;
-  margin: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+  filter: brightness(75%);
+}
+
+.image2 {
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+  filter: brightness(75%);
+}
+
+td {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 2px;
 }
@@ -6774,6 +6859,7 @@ img {
 
 .flash-img {
   width: 100%;
+  filter: brightness(75%);
 }
 
 /* NAV */
@@ -6819,11 +6905,13 @@ img {
   margin: 0 0 0 20px;
   min-width: 250px;
   text-align: center;
+  width: 66%;
 }
 
 .logo {
   width: auto;
   height: 100%;
+  width: 33%;
 }
 
 .navcont {
@@ -6848,15 +6936,15 @@ img {
   display: inline-block;
   margin-left: 0.5em;
   padding: 0;
-  font-weight: bold;
+  font-weight: 700;
   text-align: right;
 }
 .navcont .active a {
-  color: #fffffb;
+  color: #bfbfd3;
 }
 .navcont a:hover,
 .navcont .nav-toggle:hover {
-  color: #fffffb;
+  color: #d28c00;
 }
 
 .nav-toggle {
@@ -6866,6 +6954,10 @@ img {
 .navi {
   position: absolute;
   bottom: 10px;
+}
+
+.table {
+  filter: brightness(75%);
 }
 
 /* Small devices */
@@ -6950,7 +7042,4 @@ img {
   .index {
     width: 90%;
   }
-}
-.main {
-  background-color: yellow;
 }

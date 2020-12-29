@@ -26,6 +26,16 @@ body {
     height: 100%;
 }
 
+a,
+a:visited {
+    color: $light;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $yellow;
+}
+
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
