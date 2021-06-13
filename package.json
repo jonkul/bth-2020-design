@@ -1,0 +1,29 @@
+{
+  "name": "kmom10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.scss\"",
+    "style": "sass jon/scss/style.scss jon/css/style.css --no-source-map",
+    "style-min": "sass jon/scss/style.scss jon/css/style.min.css --no-source-map --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonkul/bth-2020-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonkul/bth-2020-design/issues"
+  },
+  "homepage": "https://github.com/jonkul/bth-2020-design#readme",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.34.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0"
+  }
+}
